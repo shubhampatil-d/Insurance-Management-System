@@ -1,0 +1,80 @@
+{% extends 'insurance/adminbase.html' %}
+{% block content %}
+{%load static%}
+
+<head>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+
+  <style media="screen">
+    body {
+        font-family: 'Montserrat', sans-serif !important;
+        background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+        min-height: 100vh;
+    }
+    .card, .form-control {
+        border-radius: 18px !important;
+        box-shadow: 0 6px 24px rgba(30,60,114,0.10);
+    }
+    .card {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: #fff;
+        font-weight: 500;
+        margin-bottom: 24px;
+    }
+    .btn-primary {
+        background: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
+        border: none;
+        border-radius: 8px;
+        font-weight: 700;
+        transition: background 0.2s;
+    }
+    .btn-primary:hover {
+        background: linear-gradient(90deg, #3f5efb 0%, #fc466b 100%);
+    }
+
+    a:link {
+      text-decoration: none;
+    }
+
+    h6 {
+      text-align: center;
+    }
+
+    .row {
+      margin: 100px;
+    }
+  </style>
+</head>
+<br><br>
+<div class="container">
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h6 class="panel-title">Delete Category</h6>
+    </div>
+    <table class="table table-hover" id="dev-table">
+      <thead>
+        <tr>
+            <th>Serial No.</th>
+            <th>Category Name</th>
+             <th> Creation Date</th>
+             <th>Delete Category</th>
+        </tr>
+      </thead>
+      {% for t in categories %}
+      <tr>
+
+      <td> {{ forloop.counter }}</td>
+        <td> {{t.category_name}}</td>
+        <td>{{t.creation_date}}</td>
+        <td><a class="btn btn-danger btn-xs" href="{% url 'delete-category' t.id  %}"><span class="glyphicon glyphicon-trash"></span></a></td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+</div>
+
+<br><br><br><br><br><br>
+{% endblock content %}

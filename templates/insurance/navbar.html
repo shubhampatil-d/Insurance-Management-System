@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+
+  <style type="text/css">
+    .bs-example {
+      margin: 0px;
+
+    }
+    .bg-dark {
+    background-color: #212529!important;
+}
+    .navbar-brand {
+      font-size: 20px;
+      font-family: monospace;
+      
+    }
+    body, .navbar, .dropdown-menu {
+    font-family: 'Montserrat', sans-serif !important;
+}
+.navbar {
+    background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%) !important;
+    box-shadow: 0 4px 12px rgba(30,60,114,0.15);
+}
+.navbar-brand, .navbar-nav .nav-link, .navbar-dark .navbar-nav .nav-link {
+    color: #fff !important;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: color 0.2s;
+}
+.navbar-brand:hover, .navbar-nav .nav-link:hover {
+    color: #ffd700 !important;
+}
+.dropdown-menu {
+    background: #2a5298;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(42,82,152,0.15);
+}
+.dropdown-item {
+    color: #fff;
+    font-weight: 500;
+}
+.dropdown-item:hover {
+    background: #ffd700;
+    color: #2a5298;
+}
+  </style>
+</head>
+
+<body>
+
+
+
+  <div class="bs-example">
+    <nav class="navbar navbar-expand-md  navbar-dark fixed-top" style="background-color: #000000;">
+    <a style="color: #ffffff;text-decoration: none; " href="/"><font face = "Gill" size =" 5">Insurance Management System</font><br /></a>  
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+        <div class="navbar-nav">
+          <p style="
+          padding-left: 15px;
+      "  class="nav-item nav-link active"></p>
+
+          <a href="/customer/customerclick" class="nav-item nav-link">Customer</a>
+          
+          <a href="/adminlogin" class="nav-item nav-link">Admin</a>
+
+
+        </div>
+
+        <div class="navbar-nav">
+          <a href="/aboutus" class="nav-item nav-link">About Us</a>
+          <a href="/contactus" class="nav-item nav-link">Contact Us</a>
+          
+        </div>
+
+      </div>
+    </nav>
+<!-- Insurance Hero Section -->
+<!-- <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 40vh; background: linear-gradient(120deg, #f6d365 0%, #667eea 100%); border-radius: 0 0 32px 32px; box-shadow: 0 8px 32px rgba(30,60,114,0.10); margin-bottom: 2rem;">
+    <div style="background: rgba(255,255,255,0.10); border-radius: 24px; box-shadow: 0 8px 32px rgba(30,60,114,0.10); padding: 2rem 2.5rem; max-width: 600px; text-align: center; margin-bottom: 2rem; margin-top: 2rem;">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Insurance Protection" style="width: 100%; max-width: 350px; border-radius: 18px; margin-bottom: 1.5rem; box-shadow: 0 4px 16px rgba(30,60,114,0.10);">
+        <h2 style="color: #fff; font-weight: 700; margin-bottom: 1rem;">Your Future, Our Priority</h2>
+        <p style="color: #f3f3f3; font-size: 1.15rem;">Insurance is not just a policy, it's a promise of protection and peace of mind for you and your loved ones. Secure your tomorrow, today.</p>
+    </div>
+</div> -->
+  </div>
+</body>
+
+</html>

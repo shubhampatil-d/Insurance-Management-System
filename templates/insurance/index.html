@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+
+<style>
+        .xyz{
+          margin-bottom: 0px;
+          background-image: url('{% static "image/homepage.jpg" %}');
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+body {
+    font-family: 'Montserrat', sans-serif !important;
+    background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    min-height: 100vh;
+}
+.jumbotron, .card {
+    border-radius: 18px !important;
+    box-shadow: 0 6px 24px rgba(30,60,114,0.10);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    font-weight: 500;
+}
+.btn-primary {
+    background: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    transition: background 0.2s;
+}
+.btn-primary:hover {
+    background: linear-gradient(90deg, #3f5efb 0%, #fc466b 100%);
+}
+</style>
+<body>
+  {% include "insurance/navbar.html" %}
+<!-- <br> -->
+<!-- Insurance Hero Section -->
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 40vh; background: linear-gradient(120deg, #f6d365 0%, #667eea 100%); border-radius: 0 0 32px 32px; box-shadow: 0 8px 32px rgba(30,60,114,0.10); margin-bottom: 2rem;">
+    <div style="background: rgba(255,255,255,0.10); border-radius: 24px; box-shadow: 0 8px 32px rgba(30,60,114,0.10); padding: 2rem 2.5rem; max-width: 600px; text-align: center; margin-bottom: 2rem; margin-top: 2rem;">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Insurance Protection" style="width: 100%; max-width: 350px; border-radius: 18px; margin-bottom: 1.5rem; box-shadow: 0 4px 16px rgba(30,60,114,0.10);">
+        <h2 style="color: #fff; font-weight: 700; margin-bottom: 1rem;">Your Future, Our Priority</h2>
+        <p style="color: #f3f3f3; font-size: 1.15rem;">Insurance is not just a policy, it's a promise of protection and peace of mind for you and your loved ones. Secure your tomorrow, today.</p>
+    </div>
+</div>
+
+<!-- <section id="section-jumbotron" style="margin-bottom: 0px;" class="jumbotron jumbotron-fluid d-flex justify-content-center align-items-center xyz">
+  <div class="container text-center">
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+  <!-- </div>   -->
+<!-- </section> -->
+
+<div class="jumbotron" style="margin-top: 0px;margin-bottom: 0px;">
+
+  <p class="lead text-center"> “Whole life does two things for you: Protects your family and allows you to save for your future.”
+    </p>
+  
+  <p class="text-center">- Dinara</p>
+  
+</div>
+  {% include "insurance/footer.html" %}
+
+
+</body>
+
+</html>
