@@ -3,13 +3,19 @@
 ---
 ## screenshots
 ### Homepage
-![homepage snap](https://github.com/sumitkumar1503/insurancemanagement/blob/master/static/screenshots/homepage.png?raw=true)
+![homepage snap](static/screenshots/homepage1.png)
 ### Admin Dashboard
-![dashboard snap](https://github.com/sumitkumar1503/insurancemanagement/blob/master/static/screenshots/dashboard.png?raw=true)
-### Policy Record
-![invoice snap](https://github.com/sumitkumar1503/insurancemanagement/blob/master/static/screenshots/policyrecord.png?raw=true)
-### Policy 
-![doctor snap](https://github.com/sumitkumar1503/insurancemanagement/blob/master/static/screenshots/policy.png?raw=true)
+![dashboard snap](static/screenshots/admin_dashboard.png)
+### List Policy 
+![policy snap](static/screenshots/policy.png)
+### View Policy 
+![policy snap](static/screenshots/view_policy.png)
+### View Customer
+![customer snap](static/screenshots/view_customer.png)
+### Customer Dashboard
+![dashboard snap](static/screenshots/customer_dashboard.png)
+### Customer History
+![dashboard snap](static/screenshots/customer_history.png)
 ---
 ## Functions
 ### Admin
