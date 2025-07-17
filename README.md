@@ -67,9 +67,9 @@ This project is developed for demo purpose and it's not supposed to be used in r
 
 ## Feedback
 Any suggestion and feedback is welcome. You can message me on facebook
-- [Contact on Facebook](https://fb.com/sumit.luv)
-- [Subscribe my Channel LazyCoder On Youtube](https://youtube.com/lazycoderonline)
+- [Contact on Gmail](Shubhampatil21199@gmail.com)
+- [Visit my LinkedIn](https://www.linkedin.com/in/shubham-patil-89356a340/)
 
-You create an admin user with the command:
-python manage.py createsuperuser
-Qwerty123
+## You create an admin user with the command:
+-python manage.py createsuperuser
+-Qwerty123
